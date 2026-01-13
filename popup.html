@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        :root {
+            --bg-color: #2b2b2b;
+            --text-color: #eee;
+            --card-bg: #383838;
+            --label-color: #aaa;
+            --accent-color: #4CAF50;
+            --shadow: rgba(0,0,0,0.3);
+            --icon-hover: rgba(255, 255, 255, 0.1);
+        }
+
+        body.light {
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --card-bg: white;
+            --label-color: #666;
+            --shadow: rgba(0,0,0,0.1);
+            --icon-hover: rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            width: 220px;
+            padding: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        #themeToggle {
+            position: absolute;
+            right: 0;
+            top: -2px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #themeToggle:hover {
+            background-color: var(--icon-hover);
+        }
+        
+        #themeToggle svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .count-container {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px var(--shadow);
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .count {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        .label {
+            font-size: 12px;
+            color: var(--label-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Imgur Unblocker</h2>
+        <button id="themeToggle" title="Toggle Theme"></button>
+    </div>
+
+    <div class="count-container">
+        <div class="count" id="currentCount">0</div>
+        <div class="label">Current Page</div>
+    </div>
+
+    <div class="count-container">
+        <div class="count" id="totalCount">0</div>
+        <div class="label">Total Images Proxied</div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
