@@ -10,7 +10,12 @@
     },
     "condition": {
       "regexFilter": "^https?://(\\w+\\.)?imgur\\.com/.*",
-      "resourceTypes": ["image", "xmlhttprequest"]
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest",
+        "main_frame",
+        "sub_frame"
+      ]
     }
   }
 ]
