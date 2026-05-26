@@ -1,6 +1,6 @@
 {
     "name": "Imgur Unblocker",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Replaces all imgur image links with the duckduckgo proxy.",
     "manifest_version": 3,
     "permissions": [
