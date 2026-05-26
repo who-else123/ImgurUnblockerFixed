@@ -5,7 +5,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://external-content.duckduckgo.com/iu/?u=\\0.jpg"
+        "regexSubstitution": "https://external-content.duckduckgo.com/iu/?u=\\0.png"
       }
     },
     "condition": {
