@@ -5,7 +5,7 @@ const processedElements = new Set();
 function checkRedirect() {
     const url = new URL(window.location.href);
     if (url.hostname === 'imgup.uk') {
-        const originalUrl = url.searchParams.get('u');
+        const originalUrl = url.searchParams.get('url');
         if (originalUrl && imgurRegex.test(originalUrl)) {
             pageCount++;
             
