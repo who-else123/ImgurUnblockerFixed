@@ -5,7 +5,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "http://imgup.uk/proxy/?url=\\0.png"
+        "regexSubstitution": "https://imgup.uk/proxy/?url=\\0.png"
       }
     },
     "condition": {
