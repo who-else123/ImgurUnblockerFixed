@@ -1,7 +1,7 @@
 {
-    "name": "Imgur Unblocker",
+    "name": "Imgur Unblocker (Imgup)",
     "version": "2.0.3",
-    "description": "Replaces all imgur image links with the imgup proxy. (Modified by who_else123)",
+    "description": "Replaces all imgur image links with the imgup proxy. \nModified by who_else123 to change the proxy from DuckDuckGo to Imgup due to new restrictions imposed by Imgur. \nCredit to HexedHero for developing the original extension!",
     "manifest_version": 3,
     "permissions": [
         "declarativeNetRequest",
